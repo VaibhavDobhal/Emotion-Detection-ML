@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>😊 Emotion Detection</h1>
+    <p class="subtitle">Type your thoughts below, and let AI analyze the emotional undertone.</p>
+
+    <form action="/predict" method="POST">
+        <textarea
+            name="text"
+            placeholder="Type your feelings here..."
+            required>{{ text if text else '' }}</textarea>
+
+        <button type="submit">
+            Analyze Emotion
+        </button>
+    </form>
+
+    {% if prediction %}
+    <div class="result">
+        <h2>Detected Emotion</h2>
+        <h1 class="emotion-output">{{ prediction }}</h1>
+        <p>Confidence: <b>{{ confidence }}%</b></p>
+    </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
