@@ -107,12 +107,7 @@ Emotion-Detection-ML
 │   └── style.css
 │
 ├── Project_Report
-│   └── Emotion_Detection_Project_Report.pdf
-│
-└── screenshots
-    ├── home.png
-    └── prediction.png
-```
+    └── Emotion_Detection_Project_Report.pdf
 
 ---
 
