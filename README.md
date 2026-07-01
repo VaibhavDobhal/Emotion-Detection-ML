@@ -298,8 +298,4 @@ GitHub: https://github.com/VaibhavDobhal
 
 ---
 
-# ⭐ Support
-
-If you found this project useful, please consider giving it a ⭐ on GitHub.
-
 Thank you for visiting this repository!
